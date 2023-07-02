@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <style>
+        canvas{
+            box-shadow: 20px 10px 50px;
+        }
+        h1{
+            margin: 0px;
+            margin-bottom: 10px;
+            font-size: 3em;
+            font-family: "Helvetica";
+        }
+        body{
+            display: flex;
+            align-items :center;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0px;
+            height: 100vh;
+            background: lightblue
+
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            color: #2c2c2c;
+            
+            letter-spacing: .05em;
+            text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+            height: 100px;
+            padding-top: 40px;
+        }
+        .modal {
+            position : fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            display:none;
+
+        }
+        .moda--over{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.3);
+        }
+        .modal-content{
+            width:1000px;
+            height:500px;
+            background-color:#fff;
+            margin : auto;
+            margin-top: 100px;
+            position:relative;
+            z-index: 1;
+            border-radius: 5px;
+            /* opacity: 0.5;  filter: alpha(opacity=50); */
+    }
+    </style>
+</head>
+<body>
+    <h1>04-07 DAY</h1>
+    <canvas id ="game"></canvas>
+    <div id="myModal" class="modal">
+        <div class="moda--over"></div>
+        <div class="modal-content">
+            <video id="video1" src="sounds/happi.mp4"  loop width="300px" height="300px">
+                
+            </video>
+            
+            <video id="video2" src="sounds/spincat.mp4"  loop width="300px" height="300px"></video>
+            <p>SInh nhat vui ve !!</p>
+        </div>
+    </div>
+    <script type = "module" src="index.js"></script>
+    
+</body>
+</html>
