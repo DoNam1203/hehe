@@ -257,3 +257,5 @@ document.ontouchstart = evt => birthday.onClick(evt)
   	
 
   })()
+
+// new dit test demo
